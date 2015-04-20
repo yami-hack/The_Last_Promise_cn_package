@@ -37,7 +37,7 @@ u32			texts[] = {
 		//或者删掉那一行
 #include		"yami/item_text.h"
 #endif
-
+		 [0x046C]	=	TXT"伤药\x1F"N
 
 };
 
