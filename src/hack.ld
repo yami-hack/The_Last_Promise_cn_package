@@ -1,5 +1,6 @@
 
-
+INCLUDE link.ld
+INCLUDE text.ld
 
 SECTIONS
 {

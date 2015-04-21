@@ -34,7 +34,7 @@ CLEAN_FILE		:=	$(ROM_BIN)\
 			
 OUT			:=	text.out
 
-LDS			:=	text.ld
+LDS			:=	hack.ld
 			
 O_FILES		:=	$(SRC:.c=.o)
 

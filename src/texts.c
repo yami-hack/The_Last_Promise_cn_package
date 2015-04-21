@@ -36,6 +36,26 @@ u32			texts[] = {
 //有yami提供的翻译文本,如果不用的话,请在text_version.h注释掉TLP_CN_YAMI_ITEMNAME_,
 		//或者删掉那一行
 #include		"yami/item_text.h"
+		[0x03F7]	= TXT"铁之大剑"N,
+		TXT"钢之大剑"N,
+		TXT"银之大剑"N,
+
+		[ 0x03fa ] =	TXT"毒剑"N,
+		[ 0x03fb ] =	TXT"突刺剑"N,
+		[ 0x03fc ] =	TXT"玛尼☆卡缇\x1F"N,
+		[ 0x03fd ] =	TXT"雷剑"N,
+
+
+
+
+
+
+
+		 [0x053C]	=	TXT"二货"N,
+
+		 [0x53C]	=	TXT"二逼"N,
+
+		 [0x01E1]	=	TXT"自古BOSS出二逼"N,
 #endif
 		 [0x046C]	=	TXT"伤药\x1F"N
 

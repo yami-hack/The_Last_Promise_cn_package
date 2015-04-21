@@ -1,9 +1,23 @@
+TLP_V1.0
 在本目录下执行make bin,会产生 
 text.mbin,
 8005B9C.sbin
 8005B60.sbin
 8005C00.sbin
 8012C9C.sbin
+
+TLPv2.1
+在本目录把TLPv_1.mk重命名makefile替换了本目录的makefile
+然后在本目录执行make bin,会产生
+9BD0000.mbin
+9EF1500.mbin
+8005B9C.sbin
+8005B60.sbin
+8005C00.sbin
+8012C9C.sbin
+对应的地址导入覆盖就行了,类似下面的说明,只是没有text.mbin文件
+
+
 把那些文件对应的地址导入TLP rom中,
 (测试版是2012,其他版本,看有bug,请发邮件,763770686@qq.com)
 
@@ -25,3 +39,8 @@ text.mbin		则在ROM地址0x09CFB000导入,
 游戏原文本在 		/tools/fe7tlp.gba.c中,
 					推荐用notepad++,来修改文本,
 					最后,请参看"声明.txt"
+					
+					
+					
+					
+					

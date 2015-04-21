@@ -24,5 +24,3 @@ SECTIONS{
 		*.o(.8005C00)
 	}
 }
-INCLUDE link.ld
-INCLUDE hack.ld

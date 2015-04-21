@@ -268,7 +268,7 @@ int		out_TLP_font_wdith(fft*ft){
 int		out_TLP_font(fft*ft,u32 last){
 	tlp_fft		r_fft;
 	int			y;
-	printf("rom_FFT _f_%02X_%02X = {\n",
+	printf("const rom_FFT _f_%02X_%02X = {\n",
 			ft->gb[0],
 			ft->gb[1]
 	);
@@ -443,7 +443,7 @@ int		out_src()
 		if(nextCodeB[i]){
 			printf("\t\t[0x%02X]\t=\t",i);
 			//输出最后一个
-			printf("&_f_%02X_%02X,\n",
+			printf("(void*)&_f_%02X_%02X,\n",
 					i,
 					nextCodeB[i]
 					);

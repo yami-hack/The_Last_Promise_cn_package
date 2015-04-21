@@ -19,55 +19,116 @@
 #ifndef SRC_YAMI_ITEM_TEXT_H_
 #define SRC_YAMI_ITEM_TEXT_H_
 
+ [0x03F3]	= TXT"铁剑"N,		// [0x03F3]	="Iron Sword"
+ [0x03F4]	= TXT"细身剑"N,		// [0x03F4]	="Slim Sword"
+ [0x03F5]	= TXT"钢剑\x1F"N,		// [0x03F5]	="Steel Sword\x1F"
+ [0x03F6]	= TXT"银剑"N,		// [0x03F6]	="Silver Sword"
+ [0x03F7]	= TXT"铁之大剑"N,		// [0x03F7]	="Iron Blade"
+ [0x03FE]	= TXT"勇者之剑\x1F"N,		// [0x03FE]	="Brave Sword\x1F"
+ [0x03FF]	= TXT"倭刀"N,		// [0x03FF]	="Wo Dao"
+ [0x0400]	= TXT"必杀刃"N,		// [0x0400]	="Killing Edge"
+ [0x0405]	= TXT"破枪剑\x1F"N,		// [0x0405]	="Lancereaver\x1F"
+ [0x0408]	= TXT"铁枪"N,		// [0x0408]	="Iron Lance"
+ [0x0409]	= TXT"细枪"N,		// [0x0409]	="Slim Lance"
+ [0x040A]	= TXT"钢枪\x1F"N,		// [0x040A]	="Steel Lance\x1F"
+ [0x040B]	= TXT"银枪"N,		// [0x040B]	="Silver Lance"
+ [0x040C]	= TXT"毒枪"N,		// [0x040C]	="Poison Lance"
+ [0x040E]	= TXT"必杀枪"N,		// [0x040E]	="Killer Lance"
+ [0x040F]	= TXT"刺马枪\x1F"N,		// [0x040F]	="Horseslayer\x1F"
+ [0x0410]	= TXT"投枪\x1F"N,		// [0x0410]	="Javelin\x1F"
+ [0x0411]	= TXT"锁链枪\x1f"N,		// [0x0411]	="Spear\x1F"
+ [0x0416]	= TXT"铁斧"N,		// [0x0416]	="Iron Axe"
+ [0x0417]	= TXT"钢斧\x1F"N,		// [0x0417]	="Steel Axe\x1F"
+ [0x0418]	= TXT"银斧"N,		// [0x0418]	="Silver Axe"
+ [0x0419]	= TXT"毒斧"N,		// [0x0419]	="Poison Axe"
+ [0x041A]	= TXT"勇者之斧\x1F"N,		// [0x041A]	="Brave Axe\x1F"
+ [0x041B]	= TXT"必杀斧"N,		// [0x041B]	="Killer Axe"
+ [0x041C]	= TXT"战戟\x1F"N,		// [0x041C]	="Halberd\x1F"
+ [0x041D]	= TXT"战锤"N,		// [0x041D]	="Hammer"
+ [0x041E]	= TXT"恶魔之斧\x1F"N,		// [0x041E]	="Devil Axe\x1F"
+ [0x041F]	= TXT"投斧"N,		// [0x041F]	="Hand Axe"
+ [0x0420]	= TXT"战斧"N,		// [0x0420]	="Tomahawk"
+ [0x0421]	= TXT"破剑斧\x1F"N,		// [0x0421]	="Swordreaver\x1F"
+ [0x0422]	= TXT"弑剑斧\x1F"N,		// [0x0422]	="Swordslayer\x1F"
+ [0x0425]	= TXT"铁弓"N,		// [0x0425]	="Iron Bow"
+ [0x0426]	= TXT"钢弓\x1F"N,		// [0x0426]	="Steel Bow\x1F"
+ [0x0427]	= TXT"银弓"N,		// [0x0427]	="Silver Bow"
+ [0x0428]	= TXT"毒弓"N,		// [0x0428]	="Poison Bow"
+ [0x0429]	= TXT"必杀弓"N,		// [0x0429]	="Killer Bow"
+ [0x042A]	= TXT"勇者之弓\x1F"N,		// [0x042A]	="Brave Bow\x1F"
+ [0x042B]	= TXT"短弓\x1F"N,		// [0x042B]	="Short Bow\x1F"
+ [0x042C]	= TXT"长弓\x1F"N,		// [0x042C]	="Longbow\x1F"
+ [0x042E]	= TXT"长弩"N,		// [0x042E]	="Ballista"
+ [0x0608]	= TXT"长弩"N,		// [0x0608]	="Ballista"
+ [0x042F]	= TXT"钢铁弩\x1F"N,		// [0x042F]	="Iron Ballista\x1F"
+ [0x0430]	= TXT"必杀弩\x1F"N,		// [0x0430]	="Killer Ballista\x1F"
+ [0x0431]	= TXT"火炎"N,		// [0x0431]	="Fire"
+ [0x1123]	= TXT"火炎"N,		// [0x1123]	="Fire"
+ [0x0432]	= TXT"闪电\x1F"N,		// [0x0432]	="Thunder\x1F"
+ [0x1124]	= TXT"闪电\x1F"N,		// [0x1124]	="Thunder\x1F"
+ [0x0433]	= TXT"地狱业火"N,		// [0x0433]	="Elfire"
+ [0x0435]	= TXT"终末之冬"N,		// [0x0435]	="Fimbulvetr"
+ [0x0437]	= TXT"艾克斯迦利瓦\x1F"N,		// [0x0437]	="Excalibur\x1F"
+ [0x0438]	= TXT"闪光\x1F"N,		// [0x0438]	="Lightning\x1F"
+ [0x043A]	= TXT"神圣之光"N,		// [0x043A]	="Divine"
+ [0x043C]	= TXT"光轮"N,		// [0x043C]	="Aura"
+ [0x043F]	= TXT"熔流"N,		// [0x043F]	="Flux"
+ [0x0441]	= TXT"吸星术\x1F"N,		// [0x0441]	="Nosferatu\x1F"
+ [0x0442]	= TXT"月食\x1F"N,		// [0x0442]	="Eclipse\x1F"
+ [0x0443]	= TXT"诺斯费拉特"N,		// [0x0443]	="Fenrir"
+ [0x0446]	= TXT"回复之杖"N,		// [0x0446]	="Heal"
+ [0x0447]	= TXT"治疗之杖"N,		// [0x0447]	="Mend"
+ [0x0448]	= TXT"痊愈之杖\x1F"N,		// [0x0448]	="Recover\x1F"
+ [0x0449]	= TXT"治愈之杖"N,		// [0x0449]	="Physic"
+ [0x044A]	= TXT"生命之杖\x1F"N,		// [0x044A]	="Fortify\x1F"
+ [0x044B]	= TXT"复原之杖\x1F"N,		// [0x044B]	="Restore\x1F"
+ [0x044C]	= TXT"沉默之杖\x1F"N,		// [0x044C]	="Silence\x1F"
+ [0x112D]	= TXT"沉默之杖\x1F"N,		// [0x112D]	="Silence\x1F"
+ [0x112E]	= TXT"狂乱之杖"N,		// [0x112E]	="Berserk"
+ [0x044F]	= TXT"传送杖"N,		// [0x044F]	="Warp"
+ [0x10D9]	= TXT"援救杖"N,		// [0x10D9]	="Rescue"
+ [0x0470]	= TXT"松明之杖\x1F"N,		// [0x0470]	="Torch\x1F"
+ [0x0452]	= TXT"修理之杖"N,		// [0x0452]	="Hammerne"
+ [0x0453]	= TXT"开锁杖"N,		// [0x0453]	="Unlock"
+ [0x0454]	= TXT"魔防之杖\x1F"N,		// [0x0454]	="Barrier\x1F"
+ [0x048A]	= TXT"龙斧"N,		// [0x048A]	="Dragon Axe"
+ [0x0456]	= TXT"天使之衣"N,		// [0x0456]	="Angelic Robe"
+ [0x0457]	= TXT"能量之环\x1F"N,		// [0x0457]	="Energy Ring\x1F"
+ [0x0458]	= TXT"秘传之書\x1F"N,		// [0x0458]	="Secret Book\x1F"
+ [0x0459]	= TXT"疾风之羽"N,		// [0x0459]	="Speedwings"
+ [0x045C]	= TXT"魔法护身符"N,		// [0x045C]	="Talisman"
+ [0x045D]	= TXT"靴子\x1F"N,		// [0x045D]	="Boots\x1F"
+ [0x0462]	= TXT"猎户座之箭"N,		// [0x0462]	="Orion's Bolt"
+ [0x0463]	= TXT"天空之鞭"N,		// [0x0463]	="Elysian Whip"
+ [0x046A]	= TXT"门钥匙"N,		// [0x046A]	="Door Key"
+ [0x046B]	= TXT"盗贼钥匙"N,		// [0x046B]	="Lockpick"
+ [0x046C]	= TXT"伤药\x1F"N,		// [0x046C]	="Vulnerary\x1F"
+ [0x046D]	= TXT"特效药"N,		// [0x046D]	="Elixir"
+ [0x046E]	= TXT"圣水"N,		// [0x046E]	="Pure Water"
+ [0x046F]	= TXT"消毒药\x1F"N,		// [0x046F]	="Antitoxin\x1F"
+ [0x0471]	= TXT"菲利的护符\x1F"N,		// [0x0471]	="Delphi Shield\x1F"
+ [0x0472]	= TXT"会员卡\x1F"N,		// [0x0472]	="Member Card\x1F"
+ [0x0473]	= TXT"银卡\x1F"N,		// [0x0473]	="Silver Card\x1F"
+ [0x0474]	= TXT"白色宝玉\x1F"N,		// [0x0474]	="White Gem\x1F"
+ [0x0475]	= TXT"青色宝玉"N,		// [0x0475]	="Blue Gem"
+ [0x0476]	= TXT"赤色宝玉\x1F"N,		// [0x0476]	="Red Gem\x1F"
+ [0x0477]	= TXT"金币"N,		// [0x0477]	="Gold"
+ [0x0469]	= TXT"宝箱钥匙\x1F"N,		// [0x0469]	="Chest Key\x1F"
+ [0x047A]	= TXT"火炎爆弹"N,		// [0x047A]	="Mine"
+ [0x047B]	= TXT"光之结界"N,		// [0x047B]	="Light Rune"
+ [0x047C]	= TXT"波布罗的护符\x1F"N,		// [0x047C]	="Iron Rune\x1F"
+ [0x047D]	= TXT"法拉之力\x1F"N,		// [0x047D]	="Filla's Might\x1F"
+ [0x047E]	= TXT"妮妮斯的守护\x1F"N,		// [0x047E]	="Ninis's Grace\x1F"
+ [0x047F]	= TXT"托尔之怒"N,		// [0x047F]	="Thor's Ire"
+ [0x0480]	= TXT"塞奇之祈祷"N,		// [0x0480]	="Set's Litany"
+ [0x0483]	= TXT"断魔之斧"N,		// [0x0483]	="Emblem Axe"
+ [0x0484]	= TXT"破魔之弓"N,		// [0x0484]	="Emblem Bow"
+ [0x0466]	= TXT"天之刻印"N,		// [0x0466]	="Heaven Seal"
+ [0x0467]	= TXT"拉特娜\x1F"N,		// [0x0467]	="Fell Contract\x1F"
+ [0x0414]	= TXT"重矛\x1F"N,		// [0x0414]	="Heavy Spear\x1F"
+ [0x0415]	= TXT"短枪\x1F"N,		// [0x0415]	="Short Spear\x1F"
+ [0x0460]	= TXT"海之刻印"N,		// [0x0460]	="Ocean Seal"
 
-[0x03F3]	= TXT"铁剑"N,		// [0x03F3]	="Iron Sword"
-[0x03F4]	= TXT"细剑"N,		// [0x03F4]	="Slim Sword"
-[0x03F5]	= TXT"钢剑\x1f"N,		// [0x03F5]	="Steel Sword\x1F"
-[0x03F6]	= TXT"银剑"N,		// [0x03F6]	="Silver Sword"
-[0x0489]	= TXT"风之刃"N,		// [0x0489]	="Wind Sword"
-[0x0403]	= TXT"棱镜剑"N,		// [0x0403]	="Prism Sword"
-[0x0404]	= TXT"符文剑\x1F"N,		// [0x0404]	="Runesword\x1F"
-[0x03F7]	= TXT"Mythril Blade"N,		// [0x03F7]	="Iron Blade"
 
-
-[ 0x03fa ] =	TXT"毒剑"N,
-[ 0x03fb ] =	TXT"突刺剑"N,
-[ 0x03fc ] =	TXT"诺统\x1F"N,
-[ 0x03fd ] =	TXT"雷剑"N,
-[ 0x03fe ] =	TXT"勇者之剑x1F"N,
-[ 0x03ff ] =	TXT"倭刀"N,
-
-[ 0x0400 ] =	TXT"死亡边缘"N,
-[0x0401 ] =		TXT"破甲刀"N,
-[ 0x0402 ] =	TXT"屠龙剑"N,
-[0x0403 ] =		TXT"棱镜剑"N,
-[ 0x0404 ] =	TXT"符文剑\x1F"N,
-[ 0x0405 ] =	TXT"破枪剑\x1F"N,
-[ 0x0406 ] =	TXT"斩马刀"N,
-[ 0x0407 ] =	TXT"必杀剑"N,
-[ 0x0408 ] =	TXT"铁枪"N,
-[ 0x0409 ] =	TXT"细枪"N,
-[ 0x040a ] =	TXT"钢枪\x1F"N,
-[ 0x040b ] =	TXT"银枪"N,
-[ 0x040c ] =	TXT"毒枪"N,
-[ 0x040d ] =	TXT"勇者之枪\x1F"N,
-[ 0x040e ] =	TXT"必杀枪"N,
-[ 0x040f ] =	TXT"刺马抢\x1F"N,
-
-[0x0410 ] =		TXT"投枪\x1F"N,
-[ 0x0411] =		TXT"矛\x1F"N,
-[ 0x0414] =		TXT"重矛\x1F"N,
-[0x0415 ] =		TXT"短矛\x1F"N,
-
-[0x0416 ] =		TXT"铁斧"N,
-[0x0417 ] =		TXT"钢斧\x1F"N,
-[ 0x0418] =		TXT"银斧"N,
-[ 0x0419] =		TXT"毒斧"N,
-[ 0x041a] =		TXT"勇者之斧\x1F"N,
-[0x041B ] = 	TXT"必杀斧"N,
-[ 0x041c ] =	TXT"战戟\x1F"N,
-[ 0x041d ] =	TXT"锤"N,
-[ 0x041e ] =	TXT"魔鬼斧\x1F"N,
-[ 0x041f ] =	TXT"斧"N,
 
 #endif /* SRC_YAMI_ITEM_TEXT_H_ */
