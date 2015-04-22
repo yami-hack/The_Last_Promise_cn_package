@@ -45,17 +45,6 @@ u32			texts[] = {
 		[ 0x03fc ] =	TXT"玛尼☆卡缇\x1F"N,
 		[ 0x03fd ] =	TXT"雷剑"N,
 
-
-
-
-
-
-
-		 [0x053C]	=	TXT"二货"N,
-
-		 [0x53C]	=	TXT"二逼"N,
-
-		 [0x01E1]	=	TXT"自古BOSS出二逼"N,
 #endif
 		 [0x046C]	=	TXT"伤药\x1F"N
 
