@@ -9,7 +9,8 @@ SRC			:=	font.c\
 			text_show.c\
 			texts.c\
 			link.c \
-			font2.c
+			font2.c \
+			text_draw.c \
 			
 			
 			
@@ -17,6 +18,7 @@ HACK_ADDR	:=	8005B9C \
 				8005B60 \
 				8012C9C \
 				8005C00 \
+				8000564 \
 
 				
 ROM_BIN			:=	9EF1500.mbin
@@ -34,7 +36,8 @@ HACK_DATA	:=	$(HACK_ADDR:=.sbin)
 				
 
 CLEAN_FILE		:=	$(ROM_BIN)\
-					$(HACK_DATA)
+					$(HACK_DATA)\
+					$(ROM_TEXT_BIN)
 
 			
 OUT			:=	text.out
@@ -50,6 +53,10 @@ O_FILES		:=	$(SRC:.c=.o)
 #链接所有文件
 $(OUT):$(O_FILES)
 	$(CC)	$(CFLAGS) -T$(LDS) $^ -o $@
+	
+	
+text_draw.o:text_draw.c
+	$(CC)	-O2 -mcpu=arm7tdmi -mabi=apcs-gnu -nostdlib -c $< -o $@
 
 %.o:%.c
 	$(CC) 	$(CFLAGS) -c $< -o $@

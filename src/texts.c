@@ -46,8 +46,23 @@ u32			texts[] = {
 		[ 0x03fd ] =	TXT"雷剑"N,
 
 #endif
-		 [0x046C]	=	TXT"伤药\x1F"N
+		 [0x046C]	=	TXT"伤药\x1F"N,
+		 [0x0491]	=	TXT"游侠骑士"N,
+		 [0x0826]	=
+				 TXT"\x0B\x10\x16\x01\x01"
+				 "所以啊, 你在逗我?"
+				 "\x01"
+				 "你个二货...\x03\x01"
+				 "打死你"
+				 "\x01"
+				 "烧死你\x03"N,
 
+				 [0x01B1]	=TXT
+						 "对待敌人是特别冲动"
+						 "\x01"
+						 "of justice and dedication."
+						 "\x01"
+						 "He suffers from deep wounds..."N,
 };
 
 //u32		texts[] = {

@@ -9,7 +9,8 @@ SRC			:=	font.c\
 			text_show.c\
 			texts.c\
 			link.c \
-			font2.c
+			font2.c \
+			text_draw.c \
 			
 			
 			
@@ -17,6 +18,7 @@ HACK_ADDR	:=	8005B9C \
 				8005B60 \
 				8012C9C \
 				8005C00 \
+				8000564 \
 
 				
 ROM_BIN			:=	text.mbin
@@ -41,6 +43,9 @@ O_FILES		:=	$(SRC:.c=.o)
 
 
 .PHONY:build clean bin
+
+text_draw.c:%.o
+	$(CC)	-O2 -mcpu=arm7tdmi -mabi=apcs-gnu -nostdlib $< $@
 
 #链接所有文件
 $(OUT):$(O_FILES)
