@@ -1,0 +1,55 @@
+/**
+ * @file		L01end.c
+ * @date		2015-04-26 16:22:48
+ * @brief
+ * 第一关结束剧情
+ */
+
+
+
+[0x0833] = ""
+           "That should be the"
+           "last of them."
+           "I need to get a move on it"
+           "immediately if I want to stay safe."
+           "I hope you understand, Shon."
+           "I'm going to Anura."
+           "You're going to need to"
+           "stay hidden for the time being."
+           "You aren't joining me now."
+           "No way, Father!"
+           "You can't go alone!"
+           "Son... I'm doing"
+           "this to protect you."
+           "Those soldiers were"
+           "out to take me,"
+           "but they didn't have qualms"
+           "to kill you as well."
+           "I have business to take"
+           "care of and things to do."
+           "Magnus has made its move,"
+           "and it's time I make mine."
+           "You aren't little"
+           "anymore, right?"
+           "Take care of yourself."
+           "But Father-"
+           "I will not allow you to"
+           "come, and that's final!"
+           "You know how to defend yourself"
+           "in case trouble comes."
+           "Granted, I'd rather you don't get"
+           "into any fights with anyone,"
+           "so stay in the village"
+           "as much as possible."
+           "I'm pretty sure that Corben kid is willing"
+           "to have your company for some time."
+           "You should train with him."
+           "He's a good sparring partner."
+           "Father, don't you..."
+           "think... you..."
+           "I've already gotten my things."
+           "Farewell, Shon."
+           "Ah..."
+           "....."
+           "Corben..."
+           "",

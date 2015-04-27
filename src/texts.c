@@ -30,6 +30,9 @@
 #define		N		+ 0x80000000
 #define		TXT		(u32)
 
+#define		newline		"\x01"
+
+
 u32			texts[] = {
 #include		"textpoters.h"
 #ifdef	TLP_CN_YAMI_ITEMNAME_
@@ -46,23 +49,21 @@ u32			texts[] = {
 		[ 0x03fd ] =	TXT"雷剑"N,
 
 #endif
-		 [0x046C]	=	TXT"伤药\x1F"N,
-		 [0x0491]	=	TXT"游侠骑士"N,
-		 [0x0826]	=
-				 TXT"\x0B\x10\x16\x01\x01"
-				 "所以啊, 你在逗我?"
-				 "\x01"
-				 "你个二货...\x03\x01"
-				 "打死你"
-				 "\x01"
-				 "烧死你\x03"N,
 
-				 [0x01B1]	=TXT
-						 "对待敌人是特别冲动"
-						 "\x01"
-						 "of justice and dedication."
-						 "\x01"
-						 "He suffers from deep wounds..."N,
+#ifdef	TLP_CN_TLPcn_
+		//一些简单的道具汉化
+#include		"yami/item_text.h"
+		//道具描述中文
+#include		"TLPcn/item_cn.h"
+		//物品信息描述类
+#include		"TLPcn/item_info.h"
+		//有关选项的汉化
+#include		"TLPcn/menu_cn.h"
+		//有关地图的汉化
+#include		"TLPcn/map_info.h"
+
+#endif
+
 };
 
 //u32		texts[] = {

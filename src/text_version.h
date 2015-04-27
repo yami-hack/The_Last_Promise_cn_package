@@ -27,10 +27,16 @@
 
 
 //例子,YAMI,itemname
-#define TLP_CN_YAMI_ITEMNAME_
-#define	TLP_CN_YAMI_INFO			"由yami提供的测试翻译"
-#define	TLP_CN_INFO_BASE			0x1400
+//#define TLP_CN_YAMI_ITEMNAME_
+//#define	TLP_CN_YAMI_INFO			"由yami提供的测试翻译"
+//#define	TLP_CN_INFO_BASE			0x1400
 
+
+//2015-04-26 20:38:03
+//TLPcn 小组翻译
+//文件夹在TLPcn
+//
+#define	TLP_CN_TLPcn_
 
 
 #endif /* SRC_TEXT_VERSION_H_ */

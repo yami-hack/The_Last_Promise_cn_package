@@ -1,0 +1,5 @@
+ [0x067F]	= "打败敌人"		// [0x067F]	="Defeat Enemy"
+ [0x0687]	= "打败敌人"		// [0x0687]	="Defeat Enemy"
+ [0x0691]	= "打败敌人"		// [0x0691]	="Defeat Enemy"
+ [0x06AB]	= "打败敌人"		// [0x06AB]	="Defeat Enemy"
+ [0x0C33]	= "打败敌人"		// [0x0C33]	="Defeat Enemy"
