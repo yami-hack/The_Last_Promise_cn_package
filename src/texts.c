@@ -62,6 +62,16 @@ u32			texts[] = {
 		//有关地图的汉化
 #include		"TLPcn/map_info.h"
 
+		//有关人物的翻译
+		//2015-05-01 21:31:45
+#include		"TLPcn/characters.h"
+
+		//有关职业的翻译
+		//2015-05-01 22:10:17
+#include		"TLPcn/class.h"
+#include		"TLPcn/class_desc.h"
+
+
 #endif
 
 };
