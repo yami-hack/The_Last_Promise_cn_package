@@ -71,6 +71,9 @@ u32			texts[] = {
 #include		"TLPcn/class.h"
 #include		"TLPcn/class_desc.h"
 
+		//ÓÐ¹Ø²âÊÔµÄ
+#include		"TLPcn/txt.h"
+
 
 #endif
 

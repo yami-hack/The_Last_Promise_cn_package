@@ -1,0 +1,67 @@
+/**
+ * @file	txt.h
+ * @author	yami
+ * @date	2015-07-22 11:05:35
+ * @brief
+ * 测试
+ */
+
+[0x0813]	=	//"Over a millennium ago,"
+		TXT"千年以前\01"
+		//"\x01"
+		//"humans and dragons lived"
+"人类和龙族一起\01"
+		//"\x01"
+		//"together on a peaceful and"
+"生活在一个叫布莱恩的\01"
+		//"\x01"
+		//"luscious land called Blaine."
+"和平又富饶的大陆\x03\x01"
+		//"\x03\x01"
+		//"However, the dragons feared"
+"然而，龙族害怕\x01"
+		//"\x01"
+		//"the progression of humans in"
+"人类在技术和\x01"
+		//"\x01"
+		//"both technology and quantity."
+"人口的发展"
+//quantity是否翻译为人口有质疑
+		"\x03\x01"
+		//"So began the war that would"
+"所以发动了一场"
+		"\x01"
+		//"result in the death of dragons"
+"足以导致龙族"
+		"\x01"
+		//"and humans alike..."
+"和人类灭亡的战争..."
+		"\x03\x01"
+		//"But ultimately, dragons overcame"
+"但最终, 龙族战胜了"
+		"\x01"
+		//"the humans, and mankind was"
+"人类, 并且人类"
+		"\x01"
+		//"forced to make a decision."
+"被迫做出一个决定"
+		"\x03\x01"
+		//"Seven leaders of the war,"
+"7位战争的领导者,"
+		"\x01"
+		//"known as valiant warriors"
+"来自布莱恩各地"
+		"\x01"
+		//"from all across Blaine,"
+"被称为勇将的人,"
+		"\x03\x01"
+		//"decided that at the very least,"
+"决定至少要"
+		"\x01"
+		//"the existence of humanity must"
+"保障人类的"
+		"\x01"
+		//"be preserved, no matter the cost."
+"存在,无论任何代价."N
+		//"\x03",
+		,

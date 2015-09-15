@@ -85,7 +85,7 @@ $(ROM_BIN):$(OUT)
 
 #===============================================================
 #写入ROM中
-write:$(HACK_DATA) $(ROM_BIN)
+write:$(HACK_DATA) $(ROM_BIN) $(ROM_TEXT_BIN)
 	@echo write data....
 	$(WRITE)	$(ROM) 8000564.sbin	0x564
 	$(WRITE)	$(ROM) 8005C00.sbin	0x5C00
