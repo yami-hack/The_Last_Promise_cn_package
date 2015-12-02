@@ -13,43 +13,42 @@ SRC			:=	font.c\
 			text_draw.c \
 			
 			
-			
-HACK_ADDR	:=	8005B9C \
-				8005B60 \
-				8012C9C \
-				8005C00 \
-				8000564 \
-
 				
-ROM_BIN			:=	text.mbin
+ROM			:=	fe7tlpv2.1.gba
 
-ROM_TEXT_BIN	:=	text.mtbin
 
-HACK_REMOVE	:=	$(addprefix -R.,$(HACK_ADDR:= ))
-
-HACK_DATA	:=	$(HACK_ADDR:=.sbin)
-				
-
-CLEAN_FILE		:=	$(ROM_BIN)\
-					$(HACK_DATA)
 
 			
-OUT			:=	text.out
+OUT			:=	fe7tlp.elf
 
-LDS			:=	hack.ld
+LDS			:=	fe7tlprom.ld
 			
-O_FILES		:=	$(SRC:.c=.o)
+OBJS		:=	$(SRC:.c=.o) 
+
+OBJCOPYFLAGS	:=	--set-section-flags .rom="r,c,a"
 
 
+.PHONY:build clean elf gba all
 
-.PHONY:build clean bin
+gba:$(ROM)
 
-text_draw.c:%.o
-	$(CC)	-O2 -mcpu=arm7tdmi -mabi=apcs-gnu -nostdlib $< $@
+elf:$(OUT)
+	
 
+$(ROM):$(OUT)
+	$(OBJCOPY)	-R.link $<
+	$(OBJCOPY) $(OBJCOPYFLAGS) $<
+	$(OBJCOPY) -O binary $< $@
+	
+
+	
 #链接所有文件
-$(OUT):$(O_FILES)
+$(OUT):$(OBJS) fe7tlp.rom.o
 	$(CC)	$(CFLAGS) -T$(LDS) $^ -o $@
+	
+	
+text_draw.o:text_draw.c
+	$(CC)	-O2 -mcpu=arm7tdmi -mabi=apcs-gnu -nostdlib -c $< -o $@
 
 %.o:%.c
 	$(CC) 	$(CFLAGS) -c $< -o $@
@@ -57,17 +56,31 @@ $(OUT):$(O_FILES)
 	
 clean:
 	-rm $(OUT)
-	-rm $(O_FILES)
-	-rm $(CLEAN_FILE)
-	
-bin:$(HACK_DATA) $(ROM_BIN)
-	echo	a
+	-rm $(OBJS)
+
+
+# bin:$(HACK_DATA) $(ROM_BIN) $(ROM_TEXT_BIN)
+	# echo	a
 	
 #输出段数据
-%.sbin:$(OUT)
-	$(OBJCOPY) -O binary -j.$(@:.sbin=) $< $@
+# %.sbin:$(OUT)
+	# $(OBJCOPY) -O binary -j.$(@:.sbin=) $< $@
 	
-%.mbin:$(OUT)
-	$(OBJCOPY) -O binary $(HACK_REMOVE) $< $@
+# $(ROM_TEXT_BIN):$(OUT)
+	# $(OBJCOPY) -O binary -j.text -j.link -j.data  $< $@
+	
+# $(ROM_BIN):$(OUT)
+	# $(OBJCOPY) -O binary $(HACK_REMOVE) $< $@
 
-	
+# ===============================================================
+# 写入ROM中
+# write:$(HACK_DATA) $(ROM_BIN) $(ROM_TEXT_BIN)
+	# @echo write data....
+	# $(WRITE)	$(ROM) 8000564.sbin	0x564
+	# $(WRITE)	$(ROM) 8005C00.sbin	0x5C00
+	# $(WRITE)	$(ROM) 8005B60.sbin	0x5B60
+	# $(WRITE)	$(ROM) 8005B9C.sbin	0x5B9C
+	# $(WRITE)	$(ROM) 8012C9C.sbin	0x12C9C
+	# $(WRITE)	$(ROM) 9BD0000.mbin 0x1BD0000
+	# $(WRITE)	$(ROM) 9EF1500.mbin 0x1EF1500
+		
